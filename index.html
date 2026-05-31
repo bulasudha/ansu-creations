@@ -1,47 +1,174 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ansu Creations</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansu Dimension | Create. Share. Sell.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1>Ansu Creations</h1>
-<p>Fashion • Handmade Crafts • Gifts</p>
-</header>
 
-<section class="hero">
-<h2>Handmade Fashion & Creative Gifts</h2>
-<p>Clothing, Earrings, Bags and Beautiful Accessories.</p>
-<a class="btn" href="#products">Shop Now</a>
-</section>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Ansu <span>Dimension</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<section id="products">
-<h2>Products</h2>
-<div class="grid">
-<div class="card">👗 Clothing</div>
-<div class="card">👜 Bags</div>
-<div class="card">💎 Earrings</div>
-<div class="card">🎁 Gifts</div>
-</div>
-</section>
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <span class="badge">The Future of Content</span>
+                <h1>Next-Gen AI Video & Digital Creation</h1>
+                <p>We craft high-impact AI videos, build viral social media content, and offer premium digital products designed to scale your brand.</p>
+                <div class="hero-buttons">
+                    <a href="#shop" class="btn btn-primary">Explore Shop</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero-illustration.svg" alt="Ansu Dimension Illustration">
+            </div>
+        </div>
+    </header>
 
-<section>
-<h2>Why Choose Us?</h2>
-<ul>
-<li>Handmade Quality</li>
-<li>Affordable Prices</li>
-<li>Fast Delivery</li>
-<li>Sri Lankan Small Business</li>
-</ul>
-</section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Who We Are</h2>
+            <div class="line"></div>
+            <p class="section-desc">Ansu Dimension is a creative hub exploring the boundaries of AI-driven media, YouTube growth, and curated digital solutions.</p>
+            <div class="about-grid">
+                <div class="about-box">
+                    <h3>Our Vision</h3>
+                    <p>To empower creators worldwide by blending artificial intelligence with beautiful artistic expression.</p>
+                </div>
+                <div class="about-box">
+                    <h3>Our Mission</h3>
+                    <p>Delivering premium content automation templates, high-quality digital crafts, and strategic growth assets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer>
-<p>© 2026 Ansu Creations - Sudharaka Anjula</p>
-</footer>
-<script src="script.js"></script>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Specialized Services</h2>
+            <div class="line"></div>
+            <div class="grid">
+                <div class="card service-card">
+                    <div class="icon">🤖</div>
+                    <h3>AI Video Creation</h3>
+                    <p>Cinematic AI generation, workflow optimization, and high-quality rendering for storytelling.</p>
+                </div>
+                <div class="card service-card">
+                    <div class="icon">📺</div>
+                    <h3>YouTube & TikTok Growth</h3>
+                    <p>Niche research, custom high-CTR thumbnails, and video editing built to capture audience attention.</p>
+                </div>
+                <div class="card service-card">
+                    <div class="icon">🚀</div>
+                    <h3>Digital Branding</h3>
+                    <p>Social media content design, assets packaging, and automation tool setup for modern online businesses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="shop">
+        <div class="container">
+            <h2>Featured Digital Products</h2>
+            <div class="line"></div>
+            <div class="grid">
+                <div class="card product-card">
+                    <img src="assets/prod-templates.svg" alt="Product 1">
+                    <div class="product-info">
+                        <span class="prod-tag">Templates</span>
+                        <h3>AI Video Prompts Pack</h3>
+                        <p>Master text-to-video tools with 500+ ultra-realistic prompts.</p>
+                        <div class="price-row">
+                            <span class="price">$15.00</span>
+                            <button class="btn-buy" onclick="buyItem('AI Video Prompts Pack')">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <img src="assets/prod-lut.svg" alt="Product 2">
+                    <div class="product-info">
+                        <span class="prod-tag">Presets</span>
+                        <h3>Cinematic LUTs Pack</h3>
+                        <p>Premium color grading configurations for TikTok and Shorts creators.</p>
+                        <div class="price-row">
+                            <span class="price">$9.00</span>
+                            <button class="btn-buy" onclick="buyItem('Cinematic LUTs Pack')">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-card">
+                    <img src="assets/prod-crafts.svg" alt="Product 3">
+                    <div class="product-info">
+                        <span class="prod-tag">Art</span>
+                        <h3>Digital Crafts & Graphics</h3>
+                        <p>Exclusive futuristic element packs and background designs.</p>
+                        <div class="price-row">
+                            <span class="price">$12.00</span>
+                            <button class="btn-buy" onclick="buyItem('Digital Crafts Pack')">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Creative Dimensions Gallery</h2>
+            <div class="line"></div>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="assets/gal-1.svg" alt="AI Creation 1"></div>
+                <div class="gallery-item"><img src="assets/gal-2.svg" alt="AI Creation 2"></div>
+                <div class="gallery-item"><img src="assets/gal-3.svg" alt="AI Creation 3"></div>
+                <div class="gallery-item"><img src="assets/gal-4.svg" alt="AI Creation 4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <div class="line"></div>
+            <div class="contact-wrapper">
+                <form class="contact-form" onsubmit="handleForm(event)">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Tell us about your project or inquiry..." rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Get in Touch Directly</h3>
+                    <p>Have questions about products, business inquiries, or custom orders?</p>
+                    <a href="https://wa.me/#" class="btn-whatsapp" target="_blank">💬 Chat on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Ansu Dimension. All Rights Reserved. Designed with modern aesthetics.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
