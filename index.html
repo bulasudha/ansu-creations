@@ -180,6 +180,7 @@
             display: inline-block;
             transition: all 0.3s ease;
             text-align: center;
+            cursor: pointer;
         }
 
         .btn-primary {
@@ -270,7 +271,7 @@
             color: var(--text-sub);
         }
 
-        /* Shop Section Fixes (Fixed Layout from image_8a70de.jpg) */
+        /* Shop Section Fixes */
         .product-card img {
             width: 100%;
             height: 230px;
@@ -358,7 +359,7 @@
             transform: scale(1.1);
         }
 
-        /* Fix Contact Form Layout from image_8a6df7.png */
+        /* Fix Contact Form Layout */
         .contact-wrapper {
             display: grid;
             grid-template-columns: 1.5fr 1fr;
@@ -604,12 +605,18 @@
             <h2>Let's Connect</h2>
             <div class="line"></div>
             <div class="contact-wrapper">
-                <form class="contact-form" onsubmit="handleForm(event)">
+                <!-- Connected to Web3Forms for automated email delivery -->
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms Access Key Embedded -->
+                    <input type="hidden" name="access_key" value="f61be8dc-3fa2-4c7b-ac22-720190daa069">
+                    <!-- Custom Email Subject -->
+                    <input type="hidden" name="subject" value="New Message from Ansu Dimension Portfolio!">
+                    
                     <div class="input-group">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
-                    <textarea placeholder="Tell us about your project or inquiry..." rows="6" required></textarea>
+                    <textarea name="message" placeholder="Tell us about your project or inquiry..." rows="6" required></textarea>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
                 <div class="contact-info">
@@ -629,12 +636,6 @@
     <script>
         function buyItem(itemName) {
             alert('Thank you for choosing Ansu Dimension! Order process for "' + itemName + '" will trigger here.');
-        }
-
-        function handleForm(event) {
-            event.preventDefault();
-            alert('Thank you! Your message has been sent successfully.');
-            event.target.reset();
         }
     </script>
 </body>
